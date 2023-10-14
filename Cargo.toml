@@ -1,6 +1,6 @@
 [package]
 name = "yabai"
-version = "0.3.0"
+version = "0.3.1"
 edition = "2021"
 license = "MIT"
 keywords = ["yabai"]
@@ -10,10 +10,11 @@ repository = "https://github.com/sudosilico/yabai.rs/"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
-strum = "0.24"
-strum_macros = "0.24"
+strum = "0.25"
+strum_macros = "0.25"
 serde_json = "1.0"
 anyhow = "1.0"
-byteorder = "1.4.3"
-thiserror = "1.0.40"
+byteorder = "1.5.0"
+thiserror = "1.0.49"
 lazy_static = "1.4.0"
+
