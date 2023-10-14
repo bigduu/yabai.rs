@@ -145,10 +145,10 @@ pub fn query_windows() -> anyhow::Result<Vec<WindowInfo>> {
     }
 }
 
-pub fn focus_window(window: u32) -> anyhow::Result<Option<String>> {
+pub fn focus_window(window: i64) -> anyhow::Result<Option<String>> {
     send_command(&Command::FocusWindow(window))
 }
 
-pub fn focus_space(space: u32) -> anyhow::Result<Option<String>> {
+pub fn focus_space(space: i64) -> anyhow::Result<Option<String>> {
     send_command(&Command::FocusSpace(FocusSpaceOption::Space(space)))
 }
